@@ -49,7 +49,7 @@ DocGenerator -------> Template Generator
 * Used dataset for different values of variales like (clause-3, clause-4, section-1 )
 * With **Single Responsibility Principle** in mind the responsibility of each class is:
   * A TemplateGenerator class is used to generate template using dataset, formatted code variables to meet the requirement
-  * DocGenerator class responsible is to generate a document for a given template after walking through ERB to transform ruby variables to its respective valies and combine it with plain text and finally save doc with .html extension
+  * DocGenerator class responsible is to generate a document for a given template after walking through ERB to transform ruby variables to its respective values and combine it with plain text and finally save doc with .html extension
 
 ## Usage
 
