@@ -69,6 +69,9 @@ DocGenerator -------> Template Generator
 
 ## Running the tests
   * One can run the specs from the project's root directory with the command rspec
+  
+## Improvements
+  * By using gems can extend this to support css properties and html tags in flexible way 
 
 ## Program Output
   * Below is output for sample input as described in About section, run again the command `ruby lib/doc_generator.rb`
