@@ -15,13 +15,9 @@ Sections: A group of clauses, represented with [SECTION-#{ID}]
 
 #### Example
 Given the following template:
-```
-A T&C Document
-This document is made of plaintext. Is made of [CLAUSE-3].
-Is made of [CLAUSE-4].
-Is made of [SECTION-1].
-Your legals.
-```
+
+![Composition](images/input.png)
+
 And the following dataset:
 #### clauses:
 ```
@@ -40,14 +36,9 @@ And the following dataset:
 ```
 
 Creates the following T&C document:
-```
-A T&C Document
-This document is made of plaintext.
-Is made of And dies.
-Is made of The white horse is white.
-Is made of The quick brown fox;jumps over the lazy dog.
-Your legals.
-```
+
+![Composition](images/output.png)
+
 ## Code related design decisions
 * Entities related to the problem domain are - TemplateGenerator, DocGenerator
 * A DocGenerator has - template generator. They satisfy the **"has_a"** relationship hence I've made use this composition.
@@ -82,4 +73,4 @@ DocGenerator -------> Template Generator
 ## Program Output
   * Below is output for sample input as described in About section, run again the command `ruby lib/doc_generator.rb`
 
-  ![Composition](images/terms_and_conditions.png)
+  ![Composition](images/output.png)
