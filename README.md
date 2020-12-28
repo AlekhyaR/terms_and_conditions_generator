@@ -82,13 +82,4 @@ One can run the program with below command from the project's root directory
 # Program Output 
   * Below is output for sample input as described in About section, run again the command run lib/doc_generator.rb
 
-  ```
-  A T&C Document
-
-  This document **is** made **of** plaintext.
-  Is made of And dies.
-  Is made of The white horse is white.
-  Is made of The quick brown fox;jumps over the lazy dog.
-  Your legals.
-  ```
-
+  ![Composition](images/t_and_c_output.png)
