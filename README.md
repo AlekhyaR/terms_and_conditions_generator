@@ -3,17 +3,17 @@ The T&C generator is software which given:
 - A template
 - A dataset
 Transforms the template into a Document expanding the template tags into their rappresentation using the dataset. Below you can find more details.
-## Template
+#### Template
 Is a text made of: 
 - Plaintext
 - Tags
 
-## TAGS
+#### TAGS
 The tags supported are:
 Clauses: [CLAUSE-#{ID}]
 Sections: A group of clauses, represented with [SECTION-#{ID}]
 
-## Example
+#### Example
 Given the following template:
 ```
 A T&C Document
@@ -23,7 +23,7 @@ Is made of [SECTION-1].
 Your legals.
 ```
 And the following dataset:
-## clauses:
+#### clauses:
 ```
  [
   { "id": 1, "text": 'The quick brown fox' },
@@ -32,7 +32,7 @@ And the following dataset:
   { "id": 4, "text": 'The white horse is white' }
 ]
 ```
-## sections:
+#### sections:
 ```
 [
   { "id": 1, "clauses_ids": [1, 2] }
@@ -60,26 +60,26 @@ DocGenerator -------> Template Generator
   * A TemplateGenerator class is used to generate template using dataset, formatted code variables to meet the requirement
   * DocGenerator class responsible is to generate a document for a given template after walking through ERB to transform ruby variables to its respective valies and combine it with plain text and finally save doc with .html extension
 
-# Usage
+## Usage
 
-# Dependencies
-  * Ruby 2.6.3
+ #### Dependencies
+   * Ruby 2.6.3
 
-# Setup
-  * Run `bundle install` from a project's root directory to install related dependencies 
+ #### Setup
+   * Run `bundle install` from a project's root directory to install related dependencies 
 
-# Running the program
-One can run the program with below command from the project's root directory
+ #### Running the program
+ One can run the program with below command from the project's root directory
 
-*Format:*
-`ruby lib/doc_generator.rb` 
-  * Please go to your home path, then search for t_and_c_doc.html file
-  * Double click the `t_and_c_doc.html` file, it opens up in a browser, output will be displayed in plain text where few words will be bold. 
+ *Format:*
+ `ruby lib/doc_generator.rb` 
+   * Please go to your home path, then search for t_and_c_doc.html file
+   * Double click the `t_and_c_doc.html` file, it opens up in a browser, output will be displayed in plain text where few words will be bold. 
 
-# Running the tests
+## Running the tests
   * One can run the specs from the project's root directory with the command rspec
 
-# Program Output 
-  * Below is output for sample input as described in About section, run again the command run lib/doc_generator.rb
+## Program Output
+  * Below is output for sample input as described in About section, run again the command `ruby lib/doc_generator.rb`
 
-  ![Composition](images/t_and_c_output.png)
+  ![Composition](images/terms_and_conditions.png)
